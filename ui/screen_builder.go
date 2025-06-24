@@ -3,7 +3,7 @@ package ui
 import (
 	"encoding/json"
 	"fmt"
-	"main/model"
+	"github.com/nicholaspark09/ssr-go/model"
 )
 
 type ScreenBuilder struct {

@@ -1,6 +1,6 @@
 package ui
 
-import "main/model"
+import "github.com/nicholaspark09/ssr-go/model"
 
 type ComponentBuilder struct {
 	component model.ComponentNode

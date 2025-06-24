@@ -2,8 +2,8 @@ package ui
 
 import (
 	"encoding/json"
-	"main/model"
-	"main/utils"
+	"github.com/nicholaspark09/ssr-go/model"
+	"github.com/nicholaspark09/ssr-go/utils"
 	"strings"
 	"testing"
 )
