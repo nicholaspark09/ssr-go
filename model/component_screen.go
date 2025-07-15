@@ -36,12 +36,28 @@ type LoadingState struct {
 }
 
 type ModifierConfig struct {
-	Padding      *int     `json:"padding"`
-	FillMaxSize  *bool    `json:"fillMaxSize"`
-	FillMaxWidth *bool    `json:"fillMaxWidth"`
-	Width        *int     `json:"width"`
-	Height       *int     `json:"height"`
-	Weight       *float32 `json:"weight"`
+	Padding       *int            `json:"padding"`
+	FillMaxSize   *bool           `json:"fillMaxSize"`
+	FillMaxWidth  *bool           `json:"fillMaxWidth"`
+	Width         *int            `json:"width"`
+	Height        *int            `json:"height"`
+	Weight        *float32        `json:"weight"`
+	PaddingStart  *int            `json:"paddingStart"`
+	PaddingTop    *int            `json:"paddingTop"`
+	PaddingEnd    *int            `json:"paddingEnd"`
+	PaddingBottom *int            `json:"paddingBottom"`
+	Gradient      *GradientConfig `json:"gradient"`
+}
+
+type GradientConfig struct {
+	Type   string   `json:"type"`
+	Colors []string `json:"colors"`
+	Angle  *float32 `json:"angle"`
+	StartX *float32 `json:"startX"`
+	StartY *float32 `json:"startY"`
+	EndX   *float32 `json:"endX"`
+	EndY   *float32 `json:"endY"`
+	Radius *float32 `json:"radius"`
 }
 
 type ComponentNode struct {
